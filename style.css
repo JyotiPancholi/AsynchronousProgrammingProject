@@ -1,0 +1,66 @@
+/* Apply gradient background */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Purple Gradient */
+  margin: 0;
+  color: white;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px); /* Glass effect */
+}
+
+/* Button styling */
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Pink-Orange Gradient */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Output box with scrollable data */
+.output-box {
+  width: 400px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Scrollbar customization */
+.output-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.output-box::-webkit-scrollbar-thumb {
+  background: #ff4b2b;
+  border-radius: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
